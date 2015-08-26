@@ -1,0 +1,186 @@
+a {
+	color: #9a76a4;
+	font-family: 'Droid Serif', serif;
+}
+
+a:hover {
+	color: black;
+}
+
+b {
+	color: #661224;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/Background1.jpg");
+	background-color: white;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+h1 {
+	width: 60%;
+	height: 2.5em;
+	max-height: 2.5em;
+	margin: 0 20% 0 20%;
+	text-align: center;
+	color: black;
+	font-size: 3em;
+	font-family: 'Poiret One', cursive;
+	overflow: hidden;
+}
+
+h2 {
+	width: 100%;
+	margin: 0;
+	left: 0;
+	background-color: rgba(240,240,240,.7);
+	text-align: center;
+	text-transform: uppercase;
+	color: #544264;
+	line-height: 50px;
+	font-size: 40px;
+	font-family: 'Poiret One', cursive;
+	font-weight: 300;
+	border-bottom: 2px solid gray;
+}
+
+h3 {
+	width: 100%;
+	color: #bd744d;
+	font-size: 28px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	border-bottom: 2px solid black;
+}
+
+i {
+	color: #f05936;
+}
+
+img {
+	margin: 20px;
+}
+
+img.smallImage {
+	max-height: 150px;
+}
+
+img.medImage {
+	max-height: 300px;
+}
+
+li {
+	font-weight: normal;
+	line-height: 26px;
+}
+
+p {
+	padding: 5px 10px 0 10px;
+	color: black;
+	line-height: 26px;
+	font-size: 16px;
+	font-family: 'Droid Serif', serif;
+}
+
+strike {
+	color: #888888;
+}
+
+ul {
+	font-weight: bold;
+	line-height: 30px;
+}
+
+#copyright {
+	top: 0;
+	right: 10px;
+	position: fixed;
+	text-align: right;
+	color: #888888;
+}
+
+#header {
+	width: 100%;
+	height: 20%;
+	position: fixed;
+	overflow: hidden;
+}
+
+#pageContainer {
+	width: 100%;
+	height: auto;
+	left: 0;
+	position: absolute;
+	overflow: hidden;
+}
+
+#pageContent {
+	width: 100%;
+	height: 80%;
+	bottom: 0px;
+	position: fixed;
+	overflow: hidden;
+}
+
+#title {
+	top: 50px;
+	position: fixed;
+}
+
+.clickable {
+	font-family: 'Droid Serif', serif;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.clickable:hover {
+	color: white;
+}
+
+.hide {
+	display: none;
+}
+
+.module {
+	width: 80%;
+	height: 90%;
+	margin: 0 10% 0 10%;
+	padding: 10px;
+	background-color: rgba(240,240,240,.7);
+	overflow-y: auto;
+}
+
+.section {
+	width: 100%;
+}
+
+.tinyIcon {
+	width: 20px;
+	margin: 0 5px;
+}
+
+::-webkit-scrollbar {
+      width: 15px;
+}
+
+::-webkit-scrollbar-track {
+      background-color: #d1d7f9;
+}
+ 
+::-webkit-scrollbar-thumb {
+      background-color: #b1b7d9;
+}
+ 
+::-webkit-scrollbar-button {
+      background-color: #969cbe;
+}
+ 
+::-webkit-scrollbar-corner {
+      background-color: black;
+}
