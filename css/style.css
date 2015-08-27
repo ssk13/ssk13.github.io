@@ -1,5 +1,5 @@
 a {
-	color: white;
+	color: rgb(135, 55, 248);
 	font-family: 'Droid Serif', serif;
 }
 
@@ -20,12 +20,12 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 h1 {
 	width: 60%;
-	height: 2.5em;
+	padding-top: 60px;
 	max-height: 2.5em;
 	margin: 0 20% 0 20%;
 	text-align: center;
@@ -77,6 +77,7 @@ img.medImage {
 li {
 	font-weight: normal;
 	line-height: 26px;
+	text-shadow: none;
 }
 
 p {
@@ -85,6 +86,7 @@ p {
 	line-height: 26px;
 	font-size: 16px;
 	font-family: 'Droid Serif', serif;
+	text-shadow: none;
 }
 
 strike {
@@ -127,6 +129,12 @@ ul {
 	overflow: hidden;
 }
 
+#Resume, #Contact {
+	text-align: left;
+	margin-top: 60px;
+	border-top:2px solid #aaaaaa;
+}
+
 #title {
 	top: 50px;
 	position: fixed;
@@ -140,6 +148,11 @@ ul {
 
 .clickable:hover {
 	color: white;
+}
+
+.container {
+	width: 100%;
+	background-color: #eeeeee;
 }
 
 .hide {

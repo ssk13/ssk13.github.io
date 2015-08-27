@@ -6,7 +6,7 @@ function navigator() {
 		e.preventDefault();
 		var target = this.hash,
 			$target = $(target);
-		$('.section').slideUp();
-		$target.slideDown();
+		$('.section').removeClass('hide').slideUp();
+		$target.addClass('hide').slideDown();
 	});
 };
