@@ -20,7 +20,6 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*overflow: hidden;*/
 }
 
 h1 {
@@ -66,10 +65,6 @@ img {
 	margin: 20px;
 }
 
-img.smallImage {
-	max-height: 150px;
-}
-
 img.medImage {
 	max-height: 300px;
 }
@@ -89,10 +84,6 @@ p {
 	text-shadow: none;
 }
 
-strike {
-	color: #888888;
-}
-
 ul {
 	font-weight: bold;
 	line-height: 30px;
@@ -106,48 +97,10 @@ ul {
 	color: #888888;
 }
 
-#header {
-	width: 100%;
-	height: 15%;
-	position: fixed;
-	overflow: hidden;
-}
-
-#pageContainer {
-	width: 100%;
-	height: auto;
-	left: 0;
-	position: absolute;
-	overflow: hidden;
-}
-
-#pageContent {
-	width: 100%;
-	height: 85%;
-	bottom: 0px;
-	position: fixed;
-	overflow: hidden;
-}
-
 #Resume, #Contact {
 	text-align: left;
 	margin-top: 60px;
 	border-top:2px solid #aaaaaa;
-}
-
-#title {
-	top: 50px;
-	position: fixed;
-}
-
-.clickable {
-	font-family: 'Droid Serif', serif;
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-.clickable:hover {
-	color: white;
 }
 
 .container {
@@ -157,19 +110,6 @@ ul {
 
 .hide {
 	display: none;
-}
-
-.module {
-	width: 80%;
-	height: 90%;
-	margin: 0 10% 0 10%;
-	padding: 10px;
-	background-color: #c48c1f;
-	overflow-y: auto;
-}
-
-.section {
-	width: 100%;
 }
 
 .tinyIcon {
