@@ -19,7 +19,7 @@ $(document).ready(function(){
 	});
 
 	$('.expandable-img').on('click', function() {
-		$('#image').css('background-image', 'url("' + $(this).attr('src').replace('thumb', 'img').replace('jpg', 'JPG') + '")');
+		$('#image').css('background-image', 'url("' + $(this).attr('src').replace('thumb', 'img') + '")');
 		$('#imageContainer').removeClass('hide');
 	})
 });
