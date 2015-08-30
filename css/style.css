@@ -1,6 +1,7 @@
 a {
 	color: rgb(135, 55, 248);
 	font-family: 'Droid Serif', serif;
+	cursor: pointer;
 }
 
 a:hover {
@@ -24,7 +25,6 @@ body {
 
 h1 {
 	width: 60%;
-	padding-top: 60px;
 	max-height: 2.5em;
 	margin: 0 20% 0 20%;
 	text-align: center;
@@ -84,9 +84,19 @@ p {
 	text-shadow: none;
 }
 
+td {
+	width: 200px;
+    text-align: center;
+    padding: 5px;
+}
+
 ul {
 	font-weight: bold;
 	line-height: 30px;
+}
+
+#Bio h1 {
+	padding-top: 60px;
 }
 
 #copyright {
@@ -97,15 +107,62 @@ ul {
 	color: #888888;
 }
 
-#Resume, #Contact {
+#Contact {
+	position: fixed;
+    top: 40%;
+    width: 60%;
+    margin: 0 20%;
+    padding: 30px;
+    background-color: #eeeeee;
+    -webkit-box-shadow: 0 0 5px 2px black;
+    -moz-box-shadow: 0 0 5px 2px black;
+    box-shadow: 0 0 5px 2px black;
+}
+
+#image {
+	width: 70%;
+	height: 70%;
+	top: 15%;
+	left: 15%;
+	position: fixed;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#imageContainer {
+	width: 80%;
+	height: 80%;
+	top: 10%;
+	left: 10%;
+	position: fixed;
+	background-color: rgba(238, 238, 238, .85);
+    -webkit-box-shadow: 0 0 5px 2px black;
+    -moz-box-shadow: 0 0 5px 2px black;
+    box-shadow: 0 0 5px 2px black;
+}
+
+#Resume {
 	text-align: left;
-	margin-top: 60px;
-	border-top:2px solid #aaaaaa;
+}
+
+.x-button {
+	position: absolute;
+    top: -27px;
+    right: -27px;
+    padding: 20px;
+    cursor: pointer;
 }
 
 .container {
 	width: 100%;
 	background-color: #eeeeee;
+}
+
+.expandable-img {
+	cursor: pointer;
+	margin: 5px;
+    height: 150px;
 }
 
 .hide {
