@@ -99,6 +99,17 @@ ul {
 	padding-top: 60px;
 }
 
+#Caption {
+	background-color: rgba(0,0,0,.6);
+    font-size: 24px;
+    color: white;
+    text-shadow: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 #copyright {
 	top: 0;
 	right: 10px;
@@ -142,6 +153,14 @@ ul {
     box-shadow: 0 0 5px 2px black;
 }
 
+#leftArrowBox {
+	left: 10px;
+}
+
+#rightArrowBox {
+	right: 10px;
+}
+
 #Resume {
 	text-align: left;
 }
@@ -167,6 +186,15 @@ ul {
 
 .hide {
 	display: none;
+}
+
+.imgArrowBox {
+	cursor: pointer;
+	height: 20px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
 }
 
 .tinyIcon {
