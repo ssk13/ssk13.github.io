@@ -23,7 +23,7 @@ $(document).ready(function(){
 	}
 
 	$('.expandable-img').on('click', function() {
-		$('#image').css('background-image', 'url("' + $(this).attr('src').replace('thumb', 'img') + '")');
+		$('#image').css('background-image', 'url("' + $(this).attr('src').replace('thumb', 'img').replace('jpg', 'JPG') + '")');
 		$('#image').data('value', $(this).data('value'));
 		$('#Caption').html($(this).data('caption'));
 		$('#imageContainer').removeClass('hide');
@@ -49,7 +49,7 @@ $(document).ready(function(){
 			newValue = (currentValue + 1 > images.length) ? 1 : currentValue + 1;
 		}
 
-		$('#image').css('background-image', 'url("' + $(images[newValue - 1]).attr('src') + '")');
+		$('#image').css('background-image', 'url("' + $(images[newValue - 1]).attr('src').replace('thumb', 'img').replace('jpg', 'JPG') + '")');
 		$('#Caption').html($(images[newValue - 1]).data('caption'));
 		$('#image').data('value', $(images[newValue - 1]).data('value'));
 	}
