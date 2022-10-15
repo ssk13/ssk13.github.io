@@ -1,0 +1,22 @@
+* {
+    --main-color-1: #E6AACE;
+}
+
+.yarn-col {
+    width: 33%;
+    float: left;
+}
+
+.yarn-img {
+    width: 100%;
+}
+
+.yarn-footer {
+    display: flex;
+}
+
+.with-caption {
+    border-radius: 30px;
+    background-color: var(--main-color-1);
+    padding-bottom: 10px;
+}

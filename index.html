@@ -1,107 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal website of UF student, Sarah Klein" />
+    <meta name="description" content="Personal website of Sarah Klein" />
     <meta name="author" content="Sarah Klein" />
     <link rel="icon" href="images/favicon.png">
-    <link href="css/starter-template.css" rel="stylesheet">
-    <link href="css/cover.css" rel="stylesheet">
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <title>Sarah Klein - Software Developer</title>
-  </head>
+    <link rel="stylesheet" href="./index.css">
+    <title>Sarah Klein</title>
 
-  <body>
-  <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Sarah Klein</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html#Bio">Bio</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a class="contact-link">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <style>
+        body {
+            animation: fadeInAnimation ease 1000ms;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
 
-  <!-- Big fancy splash page with the pretty picture -->
-    <div class="site-wrapper">
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
 
-      <div class="site-wrapper-inner">
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
 
-        <div class="cover-container">
-
-          <div class="inner cover">
-            <h1 class="cover-heading title">Sarah Klein</h1>
-            <p class="lead">I am a third-year student at the University of Florida, pursuing a dual degree in Digital Arts and Sciences Engineering and Music Theory. I plan to graduate in Spring, 2017, and puruse a career in industry as a developer.</p>
-            <p class="lead">
-              <a href="index.html#Bio" class="btn btn-lg btn-default">Learn more</a>
-            </p>
-          </div>
-
-        </div>
-
-      </div>
+<body>
+    <div class="header">
+        <h2>Sarah Klein</h2>
     </div>
 
-  <!-- Actual content -->
-    <div class="container">
-
-      <div class="starter-template">
-        <div id = "Bio">
-
-          <h1>About Me</h1>
-
-          <p>
-            I am a third-year student at the University of Florida, pursuing a dual degree in Digital Arts and Sciences Engineering and Music Theory. The Digital Arts and Sciences coursework will provide me with all of the fundamentals of a traditional Computer Science degree, but with additional classes that allow me to explore the intersection of the arts and technology - and not just in the form of video game design. Students in the DAS program have the opportunity to more closely explore topics such as Human-Computer Interaction, Computer Graphics, Virtual Reality, and more. The Music Theory coursework will provide me with a fundamental knowledge of music history, pedagogy, and proficiency in my primary instrument, as well as compositional techniques and advanced musical analysis. I plan to graduate in Spring, 2017, and puruse a career in industry as a developer.
-          </p>
-
-          <p>
-            While I have a true and honest passion for both music and technology, I don't anticipate that my professional happiness is contingent on a marriage of the two. My ultimate goal as a developer is to contribute to something that both fascinates me to work on and benefits others to use. If my experiences as a musician can contribute to such a product, then I'll be glad to have the skill to contribute. My study of music theory, however, is driven by my fascination with the universal influence of music, as well as my love of performing.
-          </p>
+    <div class="cube">
+        <div class="side">
+            <div class="cube-inner" link="./pages/bass/bass.html"></div>
         </div>
-
-        <div id = "Contact" class = "hide" >
-          <h1>Contact</h1>
-          <span class="glyphicon glyphicon-remove x-button" aria-hidden="true"></span>
-          <center>
-            <table>
-              <tr>
-                <td><a href="mailto:ssk13@ufl.edu" target = "_blank"><img class = "tinyIcon" src = 'images/mail.png'></a></td>
-                <td><a href = "https://www.linkedin.com/in/kleinsarah" target = "_blank"><img class = "tinyIcon" src = 'images/linkedin.png'></a></td>
-                <td><a href = "https://github.com/ssk13" target = "_blank"><img class = "tinyIcon" src = 'images/github.png'></a></td>
-              </tr>
-              <tr>
-                <td><a href="mailto:ssk13@ufl.edu" target = "_blank">E-mail: Ssk13@ufl.edu</a></td>
-                <td><a href = "https://www.linkedin.com/in/kleinsarah" target = "_blank">LinkedIn</a></td>
-                <td><a href = "https://github.com/ssk13" target = "_blank">GitHub</a></td>
-              </tr>
-            </table>
-          </center>
+        <div class="side">
+            <div class="cube-inner" link="./pages/photo/photo.html"></div>
         </div>
-      </div>
+        <div class="side">
+            <div class="cube-inner" link="./pages/tech/tech.html"></div>
+        </div>
+        <div class="side">
+            <div class="cube-inner" link="./pages/yarn/yarn.html"></div>
+        </div>
+        <div class="side">
+            <div class="cube-inner" link="./pages/contact/contact.html"></div>
+        </div>
+        <div class="side">
+            <div class="cube-inner" link="./pages/books/books.html"></div>
+        </div>
     </div>
+</body>
 
+<script src="./index.js"></script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script src="scripts/scripts.js"></script>
-  </body>
 </html>

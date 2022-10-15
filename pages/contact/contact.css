@@ -1,0 +1,21 @@
+.contact-img {
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+}
+
+.contact-img:hover {
+    opacity: .7;
+}
+
+.contact-link {
+    width: 200px;
+    height: 200px;
+    margin: 0 25px;
+}
+
+.contact-body {
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
