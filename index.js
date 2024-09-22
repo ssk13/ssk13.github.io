@@ -142,9 +142,17 @@ function Viewport(data) {
     bindEvent(document, 'mouseup', function (e) {
         e.stopImmediatePropagation();
         if (!self.moved) {
-            document.body.classList.add('fade-out');
             sleep(500).then(() => {
-                window.location.href = e.target.attributes[1].value
+                const pageDest = e.target.attributes[1].value
+                var elements = document.getElementsByClassName("page")
+                for (var i = 0; i < elements.length; i++) {
+                    var element = elements[i];
+                    element.classList.remove('page-show');
+                    element.classList.add('page-hide');
+                }
+                if (pageDest.includes('page-')) {
+                    document.getElementById(pageDest).classList.add('page-show');
+                }
             });
         }
         self.down = false;

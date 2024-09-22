@@ -1,10 +1,10 @@
 * {
-    --image-1: url("./images/bass.png");
+    --image-1: url("./images/books.png");
     --image-2: url("./images/photo.png");
-    --image-3: url("./images/tech.png");
+    --image-3: url("./images/contact.png");
     --image-4: url("./images/yarn.png");
-    --image-5: url("./images/contact.png");
-    --image-6: url("./images/books.png");
+    --image-5: url("./images/tech.png");
+    --image-6: url("./images/bass.png");
     --main-color-1: #7489A6;
     --main-color-2: #ACD2ED;
     --main-color-3: #E6AACE;
@@ -26,10 +26,8 @@ a:hover {
 
 body {
     width: 100vw;
-    height: 100vh;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     background-color: var(--light);
 }
 
@@ -63,9 +61,11 @@ h1 {
 
 h2 {
     color: var(--black);
-    font-size: 6em;
+    font-size: 3em;
     text-align: center;
     font-family: Tahoma, sans-serif;
+    width: 100%;
+    background-color: var(--main-color-2);
 }
 
 h3 {
@@ -90,25 +90,20 @@ p, span {
 }
 
 .bio {
-    text-align: center;
-    color: var(--black);
-    width: 76%;
-    margin-left: 12%;
-    padding-bottom: 20px;
-    border: 1px solid var(--black);
-    padding: 5px 5px 20px 5px;
-    border-radius: 15px;
+  text-align: center;
+  color: var(--black);
+  border-left: 1px solid var(--black);
+  padding: 0 15px;
+  position: absolute;
 }
 
 .bio-image {
-    width: 30%;
+    width: 60%;
 }
 
-
-
 .header {
-    top: 20px;
-    text-align: center;
+  position: fixed;
+  top: 0px;
 }
 
 .radio-button {
@@ -122,6 +117,156 @@ p, span {
 .radio-button:hover {
     outline: 1px solid var(--light);
 }
+
+.page-hide {
+  display: none;
+}
+
+.page-show {
+  display: block;
+}
+
+
+/* --- Pages --- */
+
+/* Yarn */
+
+* {
+  --main-color-1: #E6AACE;
+}
+
+.yarn-col {
+  width: 33%;
+  float: left;
+}
+
+.yarn-img {
+  width: 100%;
+}
+
+.yarn-footer {
+  display: flex;
+}
+
+.with-caption {
+  border-radius: 30px;
+  background-color: var(--main-color-1);
+  padding-bottom: 10px;
+}
+
+/* Bass */
+
+* {
+  --main-color-2: #ACD2ED;
+}
+
+.bass-img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.bass-img-block {
+  display: flex;
+  justify-content: center;
+}
+
+/* Contact */
+
+.contact-img {
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+.contact-img:hover {
+  opacity: .7;
+}
+
+.contact-link {
+  width: 100px;
+  height: 100px;
+  margin: 0 25px;
+}
+
+.contact-body {
+  text-align: center;
+  width: 60%;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  align-items: center;
+}
+
+/* Photo */
+
+* {
+  --main-color-1: rgba(116, 137, 166, .95);
+}
+
+.thumbnail {
+  margin: 5px;
+  height: 150px;
+}
+
+.hide {
+  display: none;
+}
+
+#image {
+  width: 70%;
+  height: 70%;
+  top: 15%;
+  left: 15%;
+  position: fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#image-container {
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  position: fixed;
+  background-color:var(--main-color-1);
+  border: 1px solid black;
+}
+
+#caption {
+  background-color: rgba(0,0,0,.6);
+  font-size: 24px;
+  color: white;
+  text-shadow: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.imgArrowBox {
+  cursor: pointer;
+  height: 50px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.arrowImg {
+  height: 50px;
+}
+
+#leftArrowBox {
+  left: 10px;
+}
+
+#rightArrowBox {
+  right: 10px;
+}
+
 
 *, *:before, *:after {
     -moz-box-sizing: border-box;
@@ -149,6 +294,18 @@ p, span {
     transform: scale(0.8, 0.8);
     -webkit-box-reflect: below 170px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent), to(rgba(250, 250, 250, 0.1))); }
   
+  .content {
+    float: right;
+    width: 60%;
+  }
+  
+  .cube-container {
+    float: left;
+    width: 40%;
+    top: 40%;
+    position: fixed;
+  }
+
   .cube {
     position: relative;
     margin: 0 auto;
